@@ -1,4 +1,5 @@
 **Request (Hibernate)**
+TODO: Igor to reach out about IBM internal systems, could OSS use another database instead of db2
 ```
 Hello,
 
