@@ -1,0 +1,51 @@
+# Sept 29, 2025
+Reminder: Meetings are now stored under https://github.com/zopencommunity/technical-steering-committee
+
+## TSC todos
+* Review of Public Facing program requests: https://github.com/zopencommunity/technical-steering-committee/blob/main/public-facing-system-access/requests.md
+* Review of Badge nominations: https://docs.google.com/forms/d/1Fk-YgJKABftqxygfK9ZbqNDWxu3T5OZm--UwgQsivJ4/edit#responses
+
+## Zopen Package Manager - Status
+
+## Demo of DNF by Sachin
+
+## Education
+* Interskill - Darren Surch
+* Gary - training program - Gary to get more details
+* Z Xplore - zopen tools integrated, but no workshops
+
+## How to Awareness
+* Brainstorm ideas
+* Use OEF to raise awareness of zopen
+* Blog to describe zopen vs OEF
+
+## Updates
+* Upcoming Guild Session Topics
+  * AI agents and MCP Servers
+  * DNF/RPM Package management
+  * New tool updates
+  * Target: October
+* New zopen package manager status
+* AI assisted PR reviews
+  * Another obstacle - Github Copilot agents cost $19/seat - awaiting response from OMP.
+* Automating the Porting process:
+  1. Start with `zopen generate` - accept inputs via command-line args - https://github.com/zopencommunity/meta/pull/1107 (in progress)
+  1.1 Add conditional logic based on language (Go, Java, Python, C/C++ should all have different defaults)
+  2. Establish an mcp server for zopen - https://github.com/zopencommunity/zopen-mcp-server  (in progress)
+  3. Leverage MCP servers for https://github.com/github/github-mcp-server, zopen to create a starter project  (in progress)
+  4. Extend the zopen mcp server for zopen-build 
+  5. Leverage existing patches (using RAG) + LLM knowledge to diagnose/assist porting
+* Upstreaming:
+  * In focus: GNU Which, Less, OpenSSL, Git, GPG - https://zopen.community/#/upstreamstatus
+* Currency:
+  * Several tools are now out of date: https://zopen.community/#/updatestatus 
+* Tools
+  * createrepo_c (ported)
+    * Next step: test with a remote rpm repo hosted via caddy
+  * dnf (built, testing in progress >90%)
+  * rpm (install issues resolved, testing in progress)
+  * alternative (done)
+  * kotlin (in progress)
+  * cppunit
+  * clang-format
+* Meta issues - https://github.com/zopencommunity/meta/issues (now over 150!)
