@@ -1,4 +1,129 @@
-**Request (Hibernate)**
+Request:
+```
+A new submission has been made for the IBM z/OS and LinuxONE Open Source Development Programs Resource Request Form. Below is a copy of the submission:
+
+First Name
+
+John
+
+
+Last Name
+
+Fox
+
+
+Email Address
+
+jfx1985@outlool.com
+
+
+Open Source Project Name
+
+Z-Phosphor
+
+
+Open Source Project Public Repo URL
+
+https://gitlab.com/foxie1985/z-phosphor
+
+
+Which of these use cases aligns with your needs?
+
+Develop and test open source software
+
+
+Other details about how you will be this resource
+
+am developing Z-Phosphor, an open-source high-performance vector visualization engine for z/OS. The project creates a bridge between modern high-velocity data streams (Python/Edge-processed) and legacy mainframe presentation layers (GDDM/HLASM).
+
+The Goal: To demonstrate that the IBM z17 is the only platform capable of serving as a centralized Command & Control (C2) interface for handling massive, life-critical datasets securely and reliably at unfathomable scales.
+
+Current Use Cases:
+
+Orbital Mechanics (HPC): I have adapted the engine to ingest Celestrak TLE data, performing real-time orbital propagation for 25,000+ satellites. Z-Phosphor renders this as a rotating 3D globe natively on 3270 hardware, demonstrating the platform's ability to handle complex spatial mathematics directly on the host.
+
+Computer Vision Telemetry: I am prototyping a module that ingests metadata from edge AI sensors (LIDAR, bounding boxes). This allows the mainframe to act as a low-latency 'Vision Dashboard' for logistics. I specifically aim to explore how the Spyre AI Accelerator can optimize these inferencing workloads to reduce latency further.
+
+Mass-Scale Medical IoT: I am using the engine to visualize high-frequency medical telemetry. By rendering thousands of concurrent patient vital signs as a live topology map, I am demonstrating how z/OS can serve as the secure backend for population-scale health monitoring where transaction reliability is critical.
+
+Resource Need: Access to a genuine z/OS environment is critical to benchmark the throughput limits of the 3270 data stream against the Telum II Data Processing Unit (DPU). My engine pushes 20fps+ vector updates, creating a high-interrupt I/O load that emulators cannot replicate. I need to validate that the new DPU architecture can handle these massive visualization transactions without latency, justifying the z17's role in next-gen HPC sectors.
+
+
+User profile page
+
+https://gitlab.com/foxie1985
+
+
+Country
+
+Australia
+
+
+Which operating system are you interested in doing development for?
+
+z/OS
+
+
+Describe any previous open source contributions
+
+Creator and maintainer of Zpectrum (https://gitlab.com/foxie1985/zpectrum), an MIT-licensed open-source project that successfully demonstrated audio-reactive visualization on IBM Mainframes using Python and REXX.
+
+I am now developing its successor, Z-Phosphor, which migrates that codebase to utilise HLASM and GDDM. This shift from interpreted scripting to native Assembler is designed to unlock the high-performance throughput required for the HPC and telemetry use cases described above. My work focuses on bridging modern Python data streams with legacy mainframe execution environments.
+
+
+Please paste your public SSH key for system access.
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC3JeQF0m0jmOovUZBqRwkLGpPwgmvGUZlme+FAAVROM/X9OvckXkq0a3epqmByguId/zYG8bgKEIN2nfOMcZ/rjawHMrO/wOW4PvKy4AbmbtjV4xZCPLcp3d4uKcoP4HJvRa+Jw4bxA/eESnYyKJPHMX01DMAi/GJsySDVV013OP30XDVhMFSm2bKDRa7AohzZI2K2AJVx5gP4MiECIpRkUIKnzise5T70hNJF4oRPq5fODNMSVC4xKchEoxZa8weG85BJATFvg4mRBxvn3aMr7tmXIma6VyjzqSo/+7n6g8bKjUN9+4zgzfkTh2XgmLY0rhgyTP+UFKLUR1mYKJUBo6Nr4WN9A2FD4OwB2YnduZTLObmdhqtxPaP1KAT6MpLA+2uqaDdFVP5Z0zn2GLIBtUeK53BbCLcNxmEBwzsLkhThbNlIUs4MoBV/vwGA2NvGp430pA86ytJF4OtsM8ljV/IyMjEHVDNZuJFwGAKL6nu1lNNE8Cl36RCRE5IuvrAedw0BrWiqug3oGzg5Y+W9jvvzhLB/1UW/LXmlq2d1FZMghMJaiFm3vl8V5o9ZnLQTUVNNQH/QoPDqKA/4EXTTUBBdMlHOnDH7A9F6NsTcS5O+BAsYFcX8VOBwoP9cqa9vE62SC7iv4xq+FlpeKJkiTLgDGM/PjCdupzAruHCFuw== z-phosphor-ibm-access
+```
+
+Request:
+```
+Hello,
+A new submission has been made for the IBM z/OS and LinuxONE Open Source Development Programs Resource Request Form. Below is a copy of the submission:
+First Name
+Aaron
+
+Last Name
+Teo
+
+Email Address
+taronaeo@gmail.com
+
+Open Source Project Name
+Llama.cpp - open-source C/C++ inference engine for Large Language Models with minimal dependencies
+
+Open Source Project Public Repo URL
+https://github.com/ggml-org/llama.cpp
+
+Which of these use cases aligns with your needs?
+Develop and test open source software
+
+Other details about how you will be this resource
+While working at IBM Technologies (Singapore) previously during my internship, I had worked on the IBM zDNN accelerator for Llama.cpp and contributed it upstream. This contribution was met with praise from industry players looking to run LLM workloads on their IBM z17 mainframes, where a noticeable 134.32% performance increase using the IBM zDNN accelerator was seen.
+
+I will be using this resource to continue the research and development (R&D) of the IBM zDNN backend for Llama.cpp and implement more support. Currently, the IBM zDNN backend for Llama.cpp supports only matrix multiplication at F32, F16, and BF16 data types, and I've had IBM customers such as Erik Janssen contact me on LinkedIn with interest in support for quantized models, which will be my next point of research, as there would be substantial gains with zDNN.
+
+Apart from the quantized matrix multiplication research, I will also be looking into support for Flash Attention, Matrix Multiplication by ID (for MoE models) and general operations support for the zDNN backend, wherever zDNN can gain performance. And I will be making all these contributions available upstream.
+
+As of now, I do not have access to an IBM z17 mainframe to test my code and conduct benchmarks, thus, the IBM zDNN backend for Llama.cpp is at a standstill with no further developments made since the initial contribution to upstream.
+
+User profile page
+https://github.com/ggml-org/llama.cpp/pulls?q=is%3Apr+author%3Ataronaeo+
+
+Country
+Singapore
+
+Which operating system are you interested in doing development for?
+Linux
+
+Linux Distribution(s)
+Ubuntu
+
+Resources requested
+IBM z17 Mainframe, 1 LPAR, minimally 2 IFLs (NOSMT), 64 GB memory, 160 GB storage, CPU Polarization set to horizontal (or if possible, set to vertical:high).
+```
+
+Request (Hibernate)**
 TODO: Igor to reach out about IBM internal systems, could OSS use another database instead of db2
 ```
 Hello,
